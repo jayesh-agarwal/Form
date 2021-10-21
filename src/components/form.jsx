@@ -12,6 +12,7 @@ function Form() {
         deg: null,
         diploma: null,
         Fav_language: "",
+        file : false,
     });
 
     const [records, setRecords] = useState([]);
@@ -26,6 +27,13 @@ function Form() {
 
         setUser({ ...user, [name]: value });
     }
+    const handleInputFile = (e) =>{
+        // setSelectedFile(e.target.files[0]);
+		setUser({...user,[e.target.name] : e.target.files});
+        console.log(e.target.files)
+        console.log(e.target.result)
+    }
+
     const handleChecked = (e) => {
         const name = e.target.name;
         console.log(e.target)
@@ -83,6 +91,10 @@ function Form() {
                 <input type="radio" autoComplete="off" id="javascript" name="Fav_language" value="JavaScript" onChange={handleCheck} />
                 <label htmlFor="javascript">JavaScript</label>
             </div>
+            <div className="block">
+                <label><b>Resume</b></label><br />
+                <input type="file"name ="resume" onChange={handleInputFile} />
+            </div>
             <button className="button" type="submit">Submit</button>
             <button className="button" type="reset">reset</button> 
             <button className="button">
@@ -104,6 +116,7 @@ function Form() {
                                 <p>Deg : {curElem.deg}</p>
                                 <p>Diploma  : {curElem.diploma}</p>
                                 <p>Fav_language : {curElem.Fav_language}</p>
+                                {/* <p>Resume : {curElem.}</p> */}
 
                             </div>
                         )

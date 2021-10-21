@@ -2,10 +2,51 @@ body{
     background-color: rgb(240,235,248);
 }
 .header {
-    background-color: rgb(180, 107, 199);
+    background-color: rgb(209, 176, 218);
     /* text-align: center; */
     height: 80px;
 }
+.AppHome h1{
+    color: blue; 
+    text-align: center;
+    /* background-image: url(../src/components/img1.jpg);   */
+}
+
+.LinkOut{
+    background-color: rgb(217, 18, 235);
+    min-height: 100px;
+}
+/* .LinkInner{
+
+    
+} */
+.LinkInnerLeft{
+    width: 100px;
+    float: left;
+    text-align: center;
+}
+.LinkInnerRight{
+    float: right;
+}
+
+.LinkInnerRight button{
+    background-color :rgb(255, 255, 255);
+    border-radius: 15px;
+    width: 90px;
+    height: 32px;
+    float: left;
+    /* margin-left: 10px; */
+    margin : 34px 20px;
+}
+
+.HomeImg{
+    width: 500px;
+    height: 300px;
+    margin-left: 400px;
+    
+}
+
+
 .hleft
 {
 width:75px;

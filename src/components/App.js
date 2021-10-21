@@ -14,7 +14,7 @@ function App() {
       {/* <Header />
       <Form />
       <Footer /> */}
-      <Navbar />
+        <Navbar />
         <Switch>
             <Route path = '/' exact component={AppHome} />
             <Route path = '/app' exact component={App1} />
@@ -22,6 +22,7 @@ function App() {
             <Route path = '/form' component={Form} />
             <Route path = '/footer' component={Footer} />
         </Switch>
+
     </div>
   );
 }
